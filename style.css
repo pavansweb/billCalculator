@@ -1,135 +1,111 @@
 * {
-    font-family: 'M PLUS Rounded 1c', Avenir Next, Helvetica, sans-serif;
-    color: white;
+  font-family: 'Roboto', sans-serif;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-image: url('https://i.imgur.com/bDePe5R.jpg');
-    background-size: cover;
-    background-position: center;
+  background-image: url('https://i.postimg.cc/PrGsz5W2/background2.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
+
 
 .wrapper {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    height: 525px;
-    width: 360px;
-    color: white;
-    background: rgba(0, 0, 0, 0.7);
-    border-radius: 1rem;
-    padding: 1.2rem;
-    margin: 100px auto;
-    border: 0 0 24px solid rgb(52 206 119 / 92%); 
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 20px;
+  padding: 2rem;
+  width: 350px;
+  text-align: center;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
 }
 
-#topContainer {
-    margin-top: 4rem;
-    border: 2px solid gray 
+#credit {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  color: #00ffff;
+  border: 1px solid #00ffff;
+  padding: 5px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+#credit:hover {
+  background-color: rgba(0, 255, 255, 0.2);
 }
 
 .container {
-    margin-top: 3rem;
-    border: 2px solid rgb(52 206 119 / 92%);
-    padding: 1rem;
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 .title {
-    font-weight: bold;
-    margin-bottom: 0.6rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #00ffff;
 }
 
 .inputContainer {
-    background: #000000;
-    border-radius: 1.4rem;
-    padding: 0 0.8rem;
-    display: flex;
-    align-items: center;
-    border: 2px solid rgba(17, 195, 219, 0.92); 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #222;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  border: 2px solid #00ffff;
 }
 
 #billTotalInput {
-    font-size: 1.2rem;
-    background: none;
-    border: none;
-    outline: none;
-    padding: none;
-}
-
-.buttonContainer {
-    background: #000000;
-    display: grid;
-    place-items: center;
-    width: 1.6rem;
-    height: 1.6rem;
-    border-radius: 50%;
-    border: 2px solid rgba(0, 253, 245, 0.92) 
-}
-
-.splitButton {
-    background: none;
-    border: none;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  outline: none;
+  width: 100%;
+  color: #00ffff;
+  text-align: right;
+  margin-left: 0.5rem;
 }
 
 .controls {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1rem 0;
 }
 
 .splitButton {
-    font-size: 0.8rem;
-    font-weight: bold;
-    display: grid;
-    place-items: center;
+  background-color: #00ffff;
+  border: none;
+  color: #000;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.buttonText {
-    color: #d5d6e2 !important;
-}
-
-.splitAmount {
-    font-size: 1.6rem;
-    margin: 0.8rem;
-}
-
-#bottom {
-    display: flex;
-    justify-content: space-between;
-}
-
-.totalContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-    overflow: scroll;
+.splitButton:hover {
+  background-color: #00cccc;
 }
 
 .total {
-    font-size: 2rem;
-   
-}
-
-
-#pavan{
-    text-align: center;
-    position: relative;
-    border: 1px solid aqua;
-    margin: -10px 0 20px 0;
-    border-radius: 10px;
-    padding: 2px;
-}
-
-#pavan:hover{
-    background-color: rgba(0, 255, 255,0.8);
+  font-size: 2.5rem;
+  margin-top: 1rem;
+  color: #00ff00;
 }
 
 @media only screen and (max-width: 700px) {
-    .wrapper {
-        width: 80%;
-        margin: 20px auto;
-    }
-
-    #topContainer {
-        margin-top: 2rem;
-    }
+  .wrapper {
+    width: 90%;
+  }
 }
