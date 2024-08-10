@@ -5,7 +5,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -15,11 +15,9 @@
   </head>
   <body>
     <div class="wrapper">
-        <div  id="pavan" > 
-            By - Pavan
-          </div>
-      <div class="container" id="topContainer">
-        <div class="title">Bill total</div>
+      <div id="credit">By - Pavan</div>
+      <div class="container" id="billContainer">
+        <div class="title">Bill Total</div>
         <div class="inputContainer">
           <span>₹</span>
           <input
@@ -30,21 +28,13 @@
           />
         </div>
       </div>
-      <div class="container" id="bottom">
+      <div class="container" id="peopleContainer">
         <div class="splitContainer">
-          <div class="title">People</div>
+          <div class="title">Number of People</div>
           <div class="controls">
-            <span class="buttonContainer">
-              <button class="splitButton" onclick="increasePeople()">
-                <span class="buttonText">+</span>
-              </button>
-            </span>
-            <span class="splitAmount" id="numberOfPeople">1</span>
-            <span class="buttonContainer">
-              <button class="splitButton" onclick="decreasePeople()">
-                <span class="buttonText">-</span>
-              </button>
-            </span>
+            <button class="splitButton" onclick="decreasePeople()">-</button>
+            <span id="numberOfPeople">1</span>
+            <button class="splitButton" onclick="increasePeople()">+</button>
           </div>
         </div>
         <div class="totalContainer">
@@ -52,12 +42,7 @@
           <div class="total" id="perPersonTotal">₹0.00</div>
         </div>
       </div>
-      
     </div>
-
-
-    lorem
-
     <script type="text/javascript" src="script.js"></script>
   </body>
 </html>
