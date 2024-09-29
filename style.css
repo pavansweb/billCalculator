@@ -1,135 +1,116 @@
-* {
-    font-family: 'M PLUS Rounded 1c', Avenir Next, Helvetica, sans-serif;
-    color: white;
-}
-
+/* General Style */
 body {
-    background-image: url('https://i.imgur.com/bDePe5R.jpg');
-    background-size: cover;
-    background-position: center;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    background-color: #f4f4f4;
+  }
+  
+  .wrapper {
+    max-width: 600px;
+    margin: 50px auto;
+  }
+  
+  #pavan {
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #555;
+  }
+  
+  #topContainer, #bottom {
+    background-color: white;
+    border-radius: 15px;
+  }
+  
+
+  /* Navigation styles */
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fff;
+    padding: 1rem 2rem;
+    box-shadow: 0px 2px 4px -1px rgb(0 0 0 / 20%), 0px 4px 5px 0px rgb(0 0 0 / 14%), 0px 1px 10px 0px rgb(0 0 0 / 12%);
 }
 
-.wrapper {
+.nav .logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: url('https://i.postimg.cc/Fz2hR18L/pavan-logo.png') no-repeat center/cover;
+}
+
+.nav h {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 1rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #007bff;
+}
+
+  /* Title Styling */
+  .title {
+    margin-bottom: 10px;
+  }
+  
+  .inputContainer {
     display: flex;
     justify-content: center;
-    flex-direction: column;
-    height: 525px;
-    width: 360px;
-    color: white;
-    background: rgba(0, 0, 0, 0.7);
-    border-radius: 1rem;
-    padding: 1.2rem;
-    margin: 100px auto;
-    border: 0 0 24px solid rgb(52 206 119 / 92%); 
-}
-
-#topContainer {
-    margin-top: 4rem;
-    border: 2px solid gray 
-}
-
-.container {
-    margin-top: 3rem;
-    border: 2px solid rgb(52 206 119 / 92%);
-    padding: 1rem;
-}
-
-.title {
-    font-weight: bold;
-    margin-bottom: 0.6rem;
-}
-
-.inputContainer {
-    background: #000000;
-    border-radius: 1.4rem;
-    padding: 0 0.8rem;
-    display: flex;
     align-items: center;
-    border: 2px solid rgba(17, 195, 219, 0.92); 
-}
-
-#billTotalInput {
-    font-size: 1.2rem;
-    background: none;
-    border: none;
-    outline: none;
-    padding: none;
-}
-
-.buttonContainer {
-    background: #000000;
-    display: grid;
-    place-items: center;
-    width: 1.6rem;
-    height: 1.6rem;
+  }
+  
+  .inputContainer span {
+    font-size: 1.5rem;
+    margin-right: 10px;
+  }
+  
+  /* Split Amount Section */
+  .splitContainer .controls {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .splitAmount {
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
+  
+  /* Button Styles */
+  .splitButton {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
     border-radius: 50%;
-    border: 2px solid rgba(0, 253, 245, 0.92) 
-}
-
-.splitButton {
-    background: none;
-    border: none;
-}
-
-.controls {
-    display: flex;
-    align-items: center;
-}
-
-.splitButton {
-    font-size: 0.8rem;
-    font-weight: bold;
-    display: grid;
-    place-items: center;
-}
-
-.buttonText {
-    color: #d5d6e2 !important;
-}
-
-.splitAmount {
-    font-size: 1.6rem;
-    margin: 0.8rem;
-}
-
-#bottom {
-    display: flex;
-    justify-content: space-between;
-}
-
-.totalContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-    overflow: scroll;
-}
-
-.total {
-    font-size: 2rem;
-   
-}
-
-
-#pavan{
-    text-align: center;
-    position: relative;
-    border: 1px solid aqua;
-    margin: -10px 0 20px 0;
-    border-radius: 10px;
-    padding: 2px;
-}
-
-#pavan:hover{
-    background-color: rgba(0, 255, 255,0.8);
-}
-
-@media only screen and (max-width: 700px) {
-    .wrapper {
-        width: 80%;
-        margin: 20px auto;
-    }
-
-    #topContainer {
-        margin-top: 2rem;
-    }
-}
+    border: 1px solid #007bff;
+  }
+  
+  .splitButton:hover {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .totalContainer .total {
+    margin-top: 20px;
+    color: #333;
+  }
+  
+  h3, h4, h5 {
+    color: #333;
+  }
+  

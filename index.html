@@ -1,63 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500&display=swap"
-      rel="stylesheet"
-    />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" type="text/css" />
-    <title>Tip Calculator</title>
-  </head>
-  <body>
-    <div class="wrapper">
-        <div  id="pavan" > 
-            By - Pavan
-          </div>
-      <div class="container" id="topContainer">
-        <div class="title">Bill total</div>
-        <div class="inputContainer">
-          <span>₹</span>
-          <input
-            onkeyup="calculateBill()"
-            type="number"
-            id="billTotalInput"
-            placeholder="0.00"
-          />
-        </div>
-      </div>
-      <div class="container" id="bottom">
-        <div class="splitContainer">
-          <div class="title">People</div>
-          <div class="controls">
-            <span class="buttonContainer">
-              <button class="splitButton" onclick="increasePeople()">
-                <span class="buttonText">+</span>
-              </button>
-            </span>
-            <span class="splitAmount" id="numberOfPeople">1</span>
-            <span class="buttonContainer">
-              <button class="splitButton" onclick="decreasePeople()">
-                <span class="buttonText">-</span>
-              </button>
-            </span>
-          </div>
-        </div>
-        <div class="totalContainer">
-          <div class="title">Total per Person</div>
-          <div class="total" id="perPersonTotal">₹0.00</div>
-        </div>
-      </div>
-      
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500&display=swap" rel="stylesheet" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" type="text/css" />
+  <title>Tip Calculator</title>
+</head>
+
+<body>
+
+  <nav class="nav">
+    <ul class="nav-links">
+       <li><a href="/billCalculator/"> Home </a></li>
+        <li><a target="_blank" href="https://pavansweb.github.io/UwU/">About Me</a></li>
+        <li><a target="_blank" href="https://pavansweb.github.io/contact/">Contact</a></li>
+    </ul>
+</nav>
+
+  <div class="wrapper container-fluid">
+    <div class="text-center" id="pavan">
+      <p>By - Pavan</p>
     </div>
+    <div class="container card shadow-lg p-4" id="topContainer">
+      <div class="title h4 text-center">Bill Total</div>
+      <div class="inputContainer form-group">
+        <span class="input-group-text">₹</span>
+        <input class="form-control" onkeyup="calculateBill()" type="number" id="billTotalInput" placeholder="0.00" />
+      </div>
+    </div>
+    <div class="container card mt-4 shadow-lg p-4" id="bottom">
+      <div class="splitContainer text-center mb-4">
+        <div class="title h5">People</div>
+        <div class="controls d-flex justify-content-center align-items-center">
+          <span class="buttonContainer mx-2">
+            <button class="splitButton btn btn-outline-primary" onclick="increasePeople()">
+              <span class="buttonText">+</span>
+            </button>
+          </span>
+          <span class="splitAmount h5 mx-2" id="numberOfPeople">1</span>
+          <span class="buttonContainer mx-2">
+            <button class="splitButton btn btn-outline-primary" onclick="decreasePeople()">
+              <span class="buttonText">-</span>
+            </button>
+          </span>
+        </div>
+      </div>
+      <div class="totalContainer text-center">
+        <div class="title h5">Total per Person</div>
+        <div class="total h3 font-weight-bold" id="perPersonTotal">₹0.00</div>
+      </div>
+    </div>
+  </div>
 
+  <script type="text/javascript" src="script.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
 
-    lorem
-
-    <script type="text/javascript" src="script.js"></script>
-  </body>
 </html>
